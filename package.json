@@ -1,0 +1,26 @@
+{
+  "name": "headerapp",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^4.5.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "webpack": "5.0.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack --config-name default",
+    "build-microapp": "webpack --config-name microapp",
+    "serve":"http-server dist -p 5000 --cors"
+  },
+  "devDependencies": {
+    "raw-loader": "^4.0.0",
+    "webpack-manifest-plugin": "^4.0.2",
+    "webpack-nano": "^1.1.1"
+  }
+}
